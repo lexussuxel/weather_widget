@@ -15,6 +15,9 @@ const DailyWeather: FC<WeatherI> = ({
     id,
 }) => {
     console.log(id + ' ' + variant)
+    const binDate = (date: number) => {
+        return date < 10 ? '0' + date : date
+    }
     const renderSwitch = (id: number) => {
         switch (id) {
             case 0:
@@ -39,7 +42,7 @@ const DailyWeather: FC<WeatherI> = ({
         >
             {renderSwitch(id)}
             <p style={{ fontSize: '12px' }}>
-                {date.getDate() + '.' + (date.getMonth() + 1)}
+                {binDate(date.getDate()) + '.' + binDate(date.getMonth() + 1)}
             </p>
             <img src={weatherPicDay} alt="" />
             <div></div>
