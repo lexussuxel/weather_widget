@@ -1,0 +1,6 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px;
+    height: 414px;
+    position: relative;
+}

@@ -14,7 +14,7 @@ image.marginClass {
     background-color: black;
 }
 
-.wrapper > *{
+.wrapper > * {
     margin-left: auto;
     margin-right: auto;
     color: white;
@@ -22,7 +22,7 @@ image.marginClass {
 
 .selected {
     background-color: #323232;
-    padding:7px;
+    padding: 7px;
 }
 .outlined {
     border-color: #323232;
