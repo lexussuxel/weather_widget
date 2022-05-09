@@ -46,7 +46,7 @@ const WeatherBoard = () => {
                 style={{ position: 'absolute', top: '150' }}
             >
                 {weather.map((day, key) => (
-                    <g>
+                    <g className={styles.chart}>
                         {weather[key + 1] ? (
                             <g>
                                 <line
@@ -54,8 +54,6 @@ const WeatherBoard = () => {
                                     y1={50 - day.weatherTempDay}
                                     x2={120 + key * 80}
                                     y2={50 - weather[key + 1].weatherTempDay}
-                                    stroke="white"
-                                    strokeWidth="2"
                                 />
                             </g>
                         ) : null}
@@ -66,16 +64,13 @@ const WeatherBoard = () => {
                                     y1={120 - day.weatherTempNight}
                                     x2={120 + key * 80}
                                     y2={120 - weather[key + 1].weatherTempNight}
-                                    stroke="white"
-                                    strokeWidth="2"
                                 />
                             </g>
                         ) : null}
                         <text
                             x={35 + key * 80}
                             y={40 - day.weatherTempDay}
-                            fill="white"
-                            fontSize="12"
+                            strokeWidth="0"
                         >
                             {day.weatherTempDay + '°'}
                         </text>
@@ -83,14 +78,12 @@ const WeatherBoard = () => {
                             cx={40 + key * 80}
                             cy={50 - day.weatherTempDay}
                             r="3"
-                            stroke="white"
-                            strokeWidth="2"
+                            fill="black"
                         />
                         <text
                             x={35 + key * 80}
                             y={140 - day.weatherTempNight}
-                            fill="white"
-                            fontSize="12"
+                            strokeWidth="0"
                         >
                             {day.weatherTempNight + '°'}
                         </text>
@@ -98,8 +91,7 @@ const WeatherBoard = () => {
                             cx={40 + key * 80}
                             cy={120 - day.weatherTempNight}
                             r="3"
-                            stroke="white"
-                            strokeWidth="2"
+                            fill="black"
                         />
                     </g>
                 ))}
