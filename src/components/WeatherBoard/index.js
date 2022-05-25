@@ -1,3 +1,1 @@
-import WeatherBoard from './WeatherBoard'
-
-export default WeatherBoard
+export { WeatherBoard as default } from './WeatherBoard'

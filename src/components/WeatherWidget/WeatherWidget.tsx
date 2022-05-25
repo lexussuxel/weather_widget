@@ -1,5 +1,5 @@
 import React from 'react'
-import WeatherBoard from '../WeatherBoard/WeatherBoard'
+import WeatherBoard from '../WeatherBoard'
 
 function WeatherWidget() {
     return (
