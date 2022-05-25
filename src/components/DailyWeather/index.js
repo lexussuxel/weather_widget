@@ -1,1 +1,1 @@
-export {DailyWeather as default} from "./DailyWeather"
+export { DailyWeather as default } from './DailyWeather'

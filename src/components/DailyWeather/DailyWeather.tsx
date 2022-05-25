@@ -3,6 +3,7 @@ import { WeatherI } from './WeatherI'
 import styles from './DailyWeatherStyles.module.css'
 import { columnVariant } from './enums'
 import { DAYS_OF_WEEK } from '../WeatherBoard/weatherArr'
+//import {somePics} from "./picturesConstants";
 
 export const DailyWeather: FC<WeatherI> = ({
     date,
@@ -18,6 +19,8 @@ export const DailyWeather: FC<WeatherI> = ({
     const binDate = (date: number) => {
         return date < 10 ? '0' + date : date
     }
+
+    //let image = require(somePics.flash)
     const renderSwitch = (id: number) => {
         switch (id) {
             case 0:
@@ -53,13 +56,3 @@ export const DailyWeather: FC<WeatherI> = ({
         </div>
     )
 }
-
-//export default DailyWeather
-
-// <svg width="80" height="400">
-//     <rect  width="80" height="800" style={{fill:"red", opacity:"0.5"}} ></rect>
-//     <text  style={{color:"white", fontSize:"15px"}}>lyaaasdasdsdasd</text>
-//     <image className={styles.marginClass} href={weatherPicDay} />
-//     <text y="300" style={{color:"white", fill:"white"}}  fontSize="20px">{weatherTempNight}</text>
-//     <image y="150px" className={styles.marginClass} href={weatherPicNight} />
-// </svg>

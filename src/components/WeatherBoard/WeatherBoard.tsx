@@ -99,5 +99,3 @@ export const WeatherBoard = () => {
         </div>
     )
 }
-
-//export default WeatherBoard
