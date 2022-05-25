@@ -1,3 +1,1 @@
-import DailyWeather from './DailyWeather'
-
-export default DailyWeather
+export {DailyWeather as default} from "./DailyWeather"

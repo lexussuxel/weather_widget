@@ -4,7 +4,7 @@ import { columnVariant } from '../DailyWeather/enums'
 import { weather } from './weatherArr'
 import styles from './WeatherBoard.module.css'
 
-const WeatherBoard = () => {
+export const WeatherBoard = () => {
     const [variant, setVariant] = useState(1)
     const changeVariant = (id: number, newVariant: columnVariant) => {
         console.log(id)
@@ -100,4 +100,4 @@ const WeatherBoard = () => {
     )
 }
 
-export default WeatherBoard
+//export default WeatherBoard

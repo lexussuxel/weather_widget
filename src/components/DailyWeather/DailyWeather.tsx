@@ -4,7 +4,7 @@ import styles from './DailyWeatherStyles.module.css'
 import { columnVariant } from './enums'
 import { DAYS_OF_WEEK } from '../WeatherBoard/weatherArr'
 
-const DailyWeather: FC<WeatherI> = ({
+export const DailyWeather: FC<WeatherI> = ({
     date,
     weatherPicDay,
     weatherPicNight,
@@ -54,7 +54,7 @@ const DailyWeather: FC<WeatherI> = ({
     )
 }
 
-export default DailyWeather
+//export default DailyWeather
 
 // <svg width="80" height="400">
 //     <rect  width="80" height="800" style={{fill:"red", opacity:"0.5"}} ></rect>
